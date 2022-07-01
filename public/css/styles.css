@@ -1,0 +1,204 @@
+:root {
+  --bg-color: #ddd;
+  --nav-color: #eee;
+  --text-color: #888;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background: var(--bg-color); */
+  color: var(--text-color);
+}
+img {
+  display: block;
+  width: 100%;
+}
+#about {
+  height: 50%;
+  width: 50%;
+}
+#about img {
+  margin-right: 2rem;
+}
+main {
+  background: #ddd;
+}
+.links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.links a,
+.btn {
+  text-decoration: none;
+  display: block;
+  padding-right: 1rem;
+  color: #444;
+  padding: 20px;
+  margin: 5px;
+  /* background-color: aqua; */
+}
+.links {
+  height: 0;
+  overflow: hidden;
+  background-color: #ddd;
+  width: 70%;
+  margin-top: 50px;
+}
+.show-links {
+  height: 18rem;
+}
+a:hover {
+  color: rgb(255, 0, 255);
+}
+a.active {
+  color: #999;
+  background-color: #ddd;
+}
+li {
+  text-transform: uppercase;
+}
+
+nav {
+  background: var(--nav-color);
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.nav-btn {
+  border: none;
+}
+button i {
+  color: green;
+  font-size: 2rem;
+}
+button i:hover {
+  cursor: pointer;
+}
+/* header */
+header {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+}
+.description {
+  padding: 0.5rem;
+  /* overflow: hidden; */
+  min-height: 70%;
+  width: 100%;
+  background: linear-gradient(
+    to left,
+    rgba(255, 0, 255, 30%),
+    rgba(0, 255, 255, 0.3),
+    hsla(200, 90%, 50%, 80%)
+  );
+  position: relative;
+}
+.info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* border: 1px solid red; */
+  transform: translate(-50%, -50%);
+}
+header img {
+  width: 50%;
+  height: 70%;
+  display: block;
+}
+
+/* Gallery */
+.gallery {
+  background: rgba(0, 255, 255);
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 28%;
+  display: block;
+  margin: 1rem;
+  float: left;
+}
+
+.collection h3 {
+  font-size: 2rem;
+}
+/* footer */
+footer {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: aqua;
+}
+footer p {
+  text-align: center;
+}
+
+/* fetch from https://reqres.in/api/users/ */
+.data {
+  width: 350px;
+  margin: 2rem auto;
+  padding: 50px;
+  background: linear-gradient(rgba(255, 0, 255, 0.4), rgba(0, 255, 255, 0.8));
+
+  /* background-color: cyan; */
+}
+
+/* Media query */
+@media (min-width: 680px) {
+  .links {
+    height: auto;
+    background: none;
+    margin: 0;
+  }
+  .links ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Lights out */
+table {
+  border: 1px black solid;
+}
+
+td {
+  background-color: navy;
+  width: 50px;
+  height: 50px;
+}
+
+td.on {
+  background-color: tomato;
+}
+/* Lights out ends */
+.api {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem;
+}
+.wrapper {
+  padding: 2rem; /* justify page */
+}

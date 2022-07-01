@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <div class="nav-header">
+        <button class="btn nav-btn"><i class='fas fa-globe-africa'></i>
+        </button>
+        <button class="btn nav-toggle nav-btn">
+          <i class='fas fa-bars' href="index.html"></i>
+        </button>
+      </div>
+      <div class="links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nav Ends -->
+    <h1 class="contact-heading">Signup / Login</h1>
+    <form action="/contact" method="POST">
+      <div>
+        <label for="username">
+          Username
+        </label>
+        <input class="form-control" type="text" name="username" placeholder="Your Username">
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input class="form-control" type="password" name="password" placeholder="Your password">
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

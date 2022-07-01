@@ -1,0 +1,19 @@
+.contact-heading {
+  text-align: center;
+}
+form {
+  width: 60%;
+  max-width: 550px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  border: 1px solid lightgray;
+  padding: 2rem;
+  text-align: center;
+}
+label,
+input {
+  margin-bottom: 1.5rem;
+}
+.btn-block {
+  width: 100%;
+}
