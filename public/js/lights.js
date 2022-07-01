@@ -9,7 +9,7 @@ const DIFFICULTY = 3;
 // every element has `.id` and `.classList` props (and more!
 
 function toggleCell(y, x) {
-  console.log("toggleCell", y, x);
+  // console.log("toggleCell", y, x);
 
   if (y >= 0 && y < HEIGHT && x >= 0 && x < WIDTH) {
     let id = "y-" + y + "-x-" + x;
@@ -19,7 +19,7 @@ function toggleCell(y, x) {
 }
 
 function toggleCellNeighbours(y, x) {
-  console.log("toggleCellAndNeighbors", y, x);
+  // console.log("toggleCellAndNeighbors", y, x);
 
   toggleCell(y - 1, x);
   toggleCell(y + 1, x);
@@ -43,7 +43,7 @@ function toggleCellNeighbours(y, x) {
 // - if they won, pop up winning message
 
 function handleClick(evt) {
-  console.log("handleCellClick");
+  // console.log("handleCellClick");
 
   let id = evt.target.id;
   //console.log(id);
@@ -57,21 +57,14 @@ function handleClick(evt) {
     setTimeout(handleWin, 500); // 500ms = 1/2sec
   }
 }
-//let cell = document.querySelector("#" + id);
-//let cell = document.querySelector("#" + id);
-
-// Add "click listener" to each cell
 
 function addClickListeners() {
   for (let cell of document.querySelectorAll("td")) {
     cell.addEventListener("click", handleClick);
   }
 }
-
-// Look at all cells to see if won -- returns true/false
-
 function checkForWin() {
-  console.log("checkForWin");
+  // console.log("checkForWin");
 
   for (let cell of document.querySelectorAll("td")) {
     if (cell.classList.contains("on")) {
@@ -84,7 +77,7 @@ function checkForWin() {
 // pop up a winning message & reset
 
 function handleWin() {
-  console.log("handleWin");
+  // console.log("handleWin");
 
   alert("Great Job!");
   setupRandomBoard();
@@ -93,12 +86,12 @@ function handleWin() {
 // Pick a random integer 0 ... upperRange-1
 
 function randomNumber(upperNumber) {
-  console.log("randomNum", upperNumber);
+  // console.log("randomNum", upperNumber);
   return Math.floor(Math.random() * upperNumber);
 }
 
-function setupRamdomBoard() {
-  console.log("setupRamdomBoard");
+function setupRandomBoard() {
+  // console.log("setupRamdomBoard");
 
   for (let i = 0; i < DIFFICULTY; i++) {
     let x = randomNumber(WIDTH);
@@ -109,5 +102,5 @@ function setupRamdomBoard() {
 
 // Code that runs when page first loads:
 
-setupRamdomBoard();
+setupRandomBoard();
 addClickListeners();

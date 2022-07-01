@@ -2,7 +2,7 @@ const sectionCenter = document.querySelector(".section-center");
 const btnContainer = document.querySelector(".btn-container");
 window.addEventListener("DOMContentLoaded", () => {
   // console.log("shake and dance");
-  fetch("http://127.0.0.1:5000/api/users")
+  fetch("/api/users")
     .then(function (response) {
       return response.json();
     })
