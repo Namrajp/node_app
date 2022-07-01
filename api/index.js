@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const { menu } = require("./user");
+const { menu } = require("../user");
 app.use(express.json());
 
 // app.use(express.static("./public"));

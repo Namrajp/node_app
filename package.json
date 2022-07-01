@@ -2,11 +2,11 @@
   "name": "src",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "proxy": "node-app-six.vercel.app/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon app.js"
+    "start": "node api/index.js"
   },
   "keywords": [],
   "author": "Namraj Pudasaini",
