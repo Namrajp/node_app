@@ -27,9 +27,7 @@ img {
 #about img {
   margin-right: 2rem;
 }
-main {
-  background: #ddd;
-}
+
 .links ul {
   margin: 0;
   padding: 0;
@@ -45,7 +43,6 @@ main {
   color: #444;
   padding: 20px;
   margin: 5px;
-  /* background-color: aqua; */
 }
 .links {
   height: 0;
@@ -68,15 +65,15 @@ li {
   text-transform: uppercase;
 }
 
-nav {
-  background: var(--nav-color);
-}
 .nav-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
-
+.logo {
+  border: 5px solid pink;
+  color: pink;
+}
 button.nav-btn {
   border: none;
 }
@@ -89,11 +86,15 @@ button i:hover {
 }
 /* header */
 header {
-  height: auto;
+  height: 20vh;
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: #999;
+  /* width: 100%;
+  margin: auto; */
 }
 .description {
   padding: 0.5rem;
