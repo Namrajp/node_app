@@ -67,32 +67,33 @@ li {
 
 .nav-header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
-.logo {
-  border: 5px solid pink;
-  color: pink;
-}
-button.nav-btn {
+nav.nav-toggle {
+  font-size: 2rem;
   border: none;
 }
-button i {
+a.nav-btn {
+  border: none;
+}
+a.nav-btn i {
   color: green;
   font-size: 2rem;
+  border: none;
 }
 button i:hover {
   cursor: pointer;
 }
 /* header */
-header {
-  height: 20vh;
+header.main-header {
+  height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   color: #fff;
-  background-color: #999;
+  background-color: #aaa;
   /* width: 100%;
   margin: auto; */
 }
@@ -142,10 +143,11 @@ header img {
 footer {
   margin: 2rem;
   padding: 1rem;
-  background-color: aqua;
+  background-color: #aaa;
 }
 footer p {
   text-align: center;
+  color: #fff;
 }
 
 /* fetch from https://reqres.in/api/users/ */

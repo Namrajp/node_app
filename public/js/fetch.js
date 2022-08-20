@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         return values;
       },
-      ["all"]
+      ["programming"]
     );
     // console.log(menuCategory);
 
@@ -64,7 +64,7 @@ window.addEventListener("DOMContentLoaded", () => {
             return item;
           }
         });
-        if (category === "all") {
+        if (category === "programming") {
           displayMenuItems(menuItem);
         } else {
           // console.log(filterCategory);
