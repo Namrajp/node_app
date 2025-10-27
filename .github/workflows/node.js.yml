@@ -30,3 +30,6 @@ jobs:
     - run: npm run build --if-present
     - name: Run a one-line script
       run: echo Hello, world!
+    - name: Run a command npm install
+      run: npm install
+      
