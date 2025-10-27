@@ -32,4 +32,6 @@ jobs:
       run: echo Hello, world!
     - name: Run a command npm install
       run: npm install
+    - name: Run a command npm run start
+      run: npm run start
       
